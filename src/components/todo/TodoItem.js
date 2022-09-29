@@ -2,7 +2,7 @@ import React from "react";
 
 function TodoItem({ todo, handleDelete, setSelectedTodo }) {
   return (
-    <ol>
+    <li>
       <p>
         <a onClick={() => setSelectedTodo(todo)}>* {todo.title}</a>
       </p>
@@ -12,7 +12,7 @@ function TodoItem({ todo, handleDelete, setSelectedTodo }) {
         alt="delete"
         title="delete"
       />
-    </ol>
+    </li>
   );
 }
 
